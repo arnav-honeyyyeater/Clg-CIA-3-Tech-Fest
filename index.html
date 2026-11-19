@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechFest!!</title>
+
+    <style>
+        /* ===== BASE ===== */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+         body {
+      font-family: Arial, sans-serif;
+      background-color: #eef1f7;
+      color: #d8dee8;
+      line-height: 1.6;
+    }
+
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 14px 30px;
+            background-color: #14213d;
+            color: white;
+        }
+          footer {
+      background-color: #14213d;
+      color: white;
+      text-align: center;
+      padding: 18px;
+    }
+       
+        .logo { font-size: 1.5rem; font-weight: bold; color: #fca311; }
+    .menu { display: flex; gap: 22px; list-style: none; }
+    .menu a { color: white; text-decoration: none; }
+       
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #1d3557;
+            color: white;
+        }
+        .hero h1 { font-size: 2.4rem; margin-bottom: 8px; }
+
+        
+        .page {
+            display: flex;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 25px auto;
+            padding: 0 20px;
+            color: #1c2434;
+        }
+        main  { flex: 1; }
+        aside { flex: 0 0 260px; height: fit-content; }
+
+        main section, aside {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+        main section { margin-bottom: 20px; }
+           .lists { list-style: disc; padding-left: 20px; 2020
+               text-align: center;}
+            table {
+                 width: 100%;
+                 border-collapse: collapse;
+                 border: 1px solid #100f0f;
+                }
+                th, td {
+                 border: 1px solid #100f0f;
+                 padding: 8px;
+                 text-align: left;
+                }   
+                form {
+                 display: flex;
+                 flex-direction: column;
+                 gap: 10px;
+                }
+                input[type="text"], input[type="email"], input[type="tel"] {
+                 padding: 8px;
+                 border: 1px solid #ccc;
+                 border-radius: 4px;
+                }
+                button {
+                 padding: 10px;
+                 background-color: #14213d;
+                 color: white;
+                 border: none;
+                 border-radius: 4px;
+                 cursor: pointer;
+                 border-radius:6px;
+                }
+                img{
+                   display: flex;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 25px auto;
+            padding: 0 20px;
+            flex-direction: column;
+                }
+                
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">TechFest 2026</div>
+        <div>Name:Arnav Sharma. Reg: 26112005</div>
+        
+        <nav>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+    <section class="hero"id="home">
+        <h1>Welcome to TechFest 2026</h1>
+        <h3 id="about"> About us:</h3>
+        <p>Tech exhibition running on love </p>
+    </section>
+    <div class="page">
+        <main>
+            <section class="gallary">
+                <h2> Images from last year!!</h2>
+                <img src="Techfest.png" alt="TechFest 2025" style="width: 250px; height: 200px; border-radius: 8px; margin-bottom: 10px;"></a>
+                <p>TechFest 2025 was a huge success! Check out some of the highlights from last year's event.</p>
+                <img src="pc.jpg" alt="TechFest 2025" style="width: 250px; height: 200px; border-radius: 8px; margin-bottom: 10px;"></a>
+          <p>Check out This cool PC!</p>
+          <img src="Learn!.jpg" alt="TechFest 2025" style="width: 200px; height: 150px; border-radius: 8px; margin-bottom: 10px;"></a>
+          <p>Come to Our fest To Learn More!</p>     
+          <a href="https://learn.com" ><img src="click.jpg" alt="TechFest 2025" style="width: 150px; height: 100px; border-radius: 8px; margin-bottom: 10px;"></a>
+                <p>Click here to learn more about TechFest 2026!</p>
+                  </section>
+                  <section class="list">
+                    <h2>Registration steps</h2>
+                    <ul>
+                      <li>Fill out the registration form</li>
+                      <li>Submit the required documents</li>
+                      <li>Pay the registration fee</li>
+                      <li>Receive confirmation email And agree to the terms and conditions</li>
+                      <li>Attend the event and enjoy!</li>
+                    </ul>
+                    <h3>ordered list</h3>
+                    <ol>
+                        <li>First enter Name in form</li>
+                        <l1>Enter email</l1>
+                        <li>Enter Mobile Number</li>
+                        <li></li>
+
+                    </ol>
+                  </section>
+                  <section class="table" id="events">
+                    <h2>Event Schedule</h2>
+                    <table>
+                      <tr>
+                        <th>Time</th>
+                        <th>Activity</th>
+                        <th>Hall</th>
+                        <th>Coordinator</th>
+                      </tr>
+                      <tr>
+                        <td>9:00 AM</td>
+                        <td>Welcome and Opening Remarks</td>
+                        <td>Quadrangle</td>
+                        <td>Raiden</td>
+                        
+                      </tr>
+                      <tr>
+                        <td>10:00 AM</td>
+                        <td>Keynote Speaker</td>
+                        <td>Auditorium</td>
+                        <td>Raiden</td>
+                      </tr>
+                      <tr>
+                        <td>11 Am</td>
+                        <td>exhibition </td>
+                        <td>Auditorium</td>
+                        <td>Mr Jose</td>
+
+                      </tr>
+                      <tr>
+                        <td>12 pm</td>
+                        <td>Winner annoucement</td>
+                        <td>Auditorium</td>
+                        <td>Ms Rem</td>
+                      </tr>
+                    </table>
+                  </section>
+                   <section class="forms"id="forms">
+            <h2>Fill your details here!!</h2>
+            <form>
+                <div class="ftext">Enter your name:</div>
+                <input type="text" placeholder="ex- Ramesh" required>
+                <div class="ftext">Enter your email:</div>
+                <input type="email" placeholder="ex- ramesh@example.com" required>
+                <div class="ftext">Enter your phone number:</div>
+                <input type="tel" placeholder="ex- 123-456-7890" required>
+                <button id="submitBtn" type="submit">Submit</button>
+            </form>
+
+        </section>
+        </main>
+        <aside>
+            <h2>Important Information</h2>
+            Registration is open until December 15th, 2026. Don't miss out on the tech event of the year!
+            <h3 id="contact">Contact Us</h3>
+            <p>Email: info@techfest.com</p>
+            <p>Phone: 123-456-7890
+
+            </p>
+            <div class= reg>
+                 <a href="#forms" Click here to register>Click here to register</a>
+            </div>  
+           
+            <button id="colorB" type="button">Hero section color changer!</button>
+        </aside>
+        
+       
+    </div>
+    <footer>
+    <p>&copy; 2026 TechSpark Fest. All rights reserved.</p>
+  </footer>
+    <script>
+        document.getElementById('submitBtn').addEventListener('click', function() {
+            alert('Thank you for registering! We will contact you soon.');
+        });
+        document.getElementById('colorB').addEventListener('click', function() {
+            document.querySelector('.hero').style.backgroundColor = 'Pink';
+        });
+    </script>
+</body>
+</html>

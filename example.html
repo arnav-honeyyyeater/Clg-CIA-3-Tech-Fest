@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechSpark Fest 2026</title>
+  <style>
+    
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eef1f7;
+      color: #d8dee8;
+      line-height: 1.6;
+    }
+
+    
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding: 14px 30px;
+      background-color: #14213d;
+      color: white;
+    }
+    .logo { font-size: 1.5rem; font-weight: bold; color: #fca311; }
+    .menu { display: flex; gap: 22px; list-style: none; }
+    .menu a { color: white; text-decoration: none; }
+
+    /* ===== HERO ===== */
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background-color: #1d3557;
+      color: white;
+    }
+    .hero h1 { font-size: 2.4rem; margin-bottom: 8px; }
+
+    /* ===== MAIN + ASIDE (Flexbox) ===== */
+    .page {
+      display: flex;
+      gap: 20px;
+      max-width: 1200px;
+      margin: 25px auto;
+      padding: 0 20px;
+    }
+    main  { flex: 1; }
+    aside { flex: 0 0 260px; height: fit-content; }
+
+    main section, aside {
+      background-color: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+    main section { margin-bottom: 20px; }
+
+    h2, h3 { color: #14213d; margin-bottom: 10px; }
+
+    .dates { padding-left: 18px; }
+
+    .note {
+      background-color: #fff3d6;
+      border-left: 4px solid #fca311;
+      padding: 10px;
+      margin-top: 12px;
+    }
+
+    footer {
+      background-color: #14213d;
+      color: white;
+      text-align: center;
+      padding: 18px;
+    }
+
+    /* ===== STUDENT WORK STARTS HERE (write your CSS below, inside this style tag) ===== */
+    /* TODO (Part B-1): colour scheme, background and fonts for body, hero and sections     */
+    /* TODO (Part B-2): Flexbox for the gallery images (e.g. .gallery)                      */
+    /* TODO (Part B-3): style the table and the form (border, padding, margin, hover)       */
+    /* TODO (Part B-4): style links (hover), lists and the cursor                           */
+    /* TODO (Part B-5): media query so that the page works on mobile (max-width: 768px)     */
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="logo">TechSpark</div>
+    <nav>
+      <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#register">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <h1>TechSpark Fest 2026</h1>
+    <p>Two days of coding, robotics, design and fun.</p>
+    <!-- TODO (Part A-1): Add your Name and Register Number inside this hero section -->
+  </section>
+
+  <!-- ===== MAIN + ASIDE (Flexbox) ===== -->
+  <div class="page">
+
+    <main>
+
+      <section id="gallery">
+        <h2>Fest Gallery</h2>
+        <!-- TODO (Part A-3): Insert 4 images from the images folder (use alt, width and height).
+             TODO (Part B-2): Arrange the images in a row using Flexbox. -->
+      </section>
+
+      <section id="events">
+        <h2>Events</h2>
+        <p>Choose from technical and non-technical events conducted by student teams.</p>
+        <!-- TODO (Part A-2): Add an ORDERED list of 4 "Registration steps"
+             and an UNORDERED list of 4 event names. -->
+      </section>
+
+      <section id="schedule">
+        <h2>Fest Schedule</h2>
+        <!-- TODO (Part A-4): Create a table with the headings Time, Event, Hall, Coordinator
+             and at least 4 rows of data. Use thead and tbody. -->
+      </section>
+
+      <section id="register">
+        <h2>Register for the Fest</h2>
+        <!-- TODO (Part A-5): Create a registration form (see question paper for fields). -->
+      </section>
+
+    </main>
+
+    <aside>
+      <h3>Important Dates</h3>
+      <ul class="dates">
+        <li>Registration closes: 5 December</li>
+        <li>Fest days: 12 &amp; 13 December</li>
+      </ul>
+      <div class="note">Free entry for all students with ID card.</div>
+      <!-- TODO (Part A-6): Add two links here. One must open in a new tab,
+           and one must be an image link (clickable image). -->
+      <!-- TODO (Part C): Add a button that changes the colour of the note box
+           when clicked (use JavaScript and a variable). -->
+    </aside>
+
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2026 TechSpark Fest. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
