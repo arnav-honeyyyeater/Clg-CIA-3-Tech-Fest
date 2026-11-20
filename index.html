@@ -96,15 +96,30 @@
                  cursor: pointer;
                  border-radius:6px;
                 }
-        main section.gallary { background-color: #e2e8f0; }
+        main section.gallary { background-color: #f7f9fc; }
+        .gallary h2 { color: #14213d; margin-bottom: 20px; }
         .gallery-images {
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
-            padding: 20px;
         }
-        .gallery-images > div { flex: 0 1 250px; min-width: 0; }
-        .gallery-images img { display: block; max-width: 100%; }
+        .gallery-images > div {
+            flex: 1 1 220px;
+            min-width: 0;
+            padding: 12px;
+            background: white;
+            border: 1px solid #dce3ed;
+            border-radius: 10px;
+        }
+        .gallery-images img {
+            display: block;
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+        .gallery-images p { margin-top: 12px; line-height: 1.5; }
+        .gallery-images a:focus-visible { outline: 3px solid #b46b00; outline-offset: 3px; }
                 
         @media (max-width: 768px) {
             header { padding-inline: 16px; }
@@ -144,19 +159,19 @@
                 <h2> Images from last year!!</h2>
                 <div class="gallery-images">
                     <div>
-                        <img src="Techfest.png" alt="TechFest 2025" style="width: 250px; height: 200px; border-radius: 8px; margin-bottom: 10px;">
+                        <img src="Techfest.png" alt="TechFest 2025">
                         <p>TechFest 2025 was a huge success! Check out some of the highlights from last year's event.</p>
                     </div>
                     <div>
-                        <img src="pc.jpg" alt="TechFest 2025" style="width: 250px; height: 200px; border-radius: 8px; margin-bottom: 10px;">
+                        <img src="pc.jpg" alt="TechFest 2025">
                         <p>Check out This cool PC!</p>
                     </div>
                     <div>
-                        <img src="Learn!.jpg" alt="TechFest 2025" style="width: 200px; height: 150px; border-radius: 8px; margin-bottom: 10px;">
+                        <img src="Learn!.jpg" alt="TechFest 2025">
                         <p>Come to Our fest To Learn More!</p>
                     </div>
                     <div>
-                        <a href="https://learn.com" ><img src="click.jpg" alt="TechFest 2025" style="width: 150px; height: 100px; border-radius: 8px; margin-bottom: 10px;"></a>
+                        <a href="https://learn.com" ><img src="click.jpg" alt="TechFest 2025"></a>
                         <p>Click here to learn more about TechFest 2026!</p>
                     </div>
                 </div>
